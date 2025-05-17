@@ -15,7 +15,7 @@
 
 <body>
     <div class="container d-flex justify-content-center">
-        <form class="row g-3">
+        <form class="row g-3 w-100">
             <div class="col-12 bg-light">
                 <h1>Payment for example</h1>
             </div>
@@ -24,46 +24,52 @@
                     Some fields are mising
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-4">
                 <label>Card#</label><br>
-                <input type="text" name="" id="">
+                <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXX" aria-label="First name">
             </div>
-            <div class="col-3">
+            <div class="col-4">
                 <label>CVC#</label><br>
-                <input type="text" name="" id="">
+                <input type="text" class="form-control" placeholder="0000" aria-label="First name">
             </div>
             <div class="col-4">
                 <b><label>$</label></b>
                 <label>Amount</label><br>
-                <input type="text" name="" id="">
+               <input type="text" class="form-control" placeholder="Amount" aria-label="First name">
             </div>
+            
             <div class="col-6">
-                <label>First name</label><br>
-                <input type="text" name="" id="">
+                <label>First name</label>
+                <input type="text" class="form-control" ">
             </div>
+          
             <div class="col-6">
-                <label>Last name</label><br>
-                <input type="text" name="" id="">
+                  <label>Last name</label>
+                <input type="text" class="form-control">
             </div>
+
             <div class="col-6">
                 <label>City</label><br>
-                <input type="text" name="" id="">
+                <input type="text" class="form-control">
             </div>
-            <div class="col-3">
+            <div class="col-3 mb-3">
                 <label>State</label>
-                <select name="Pick a state" id="state">
-                    <option value="california">California</option>
-                    <option value="texas">Texas</option>
-                    <option value="florida">Florida</option>
-                    <option value="virginia">Virginia</option>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Pick a state</option>
+                    <option value="1">California</option>
+                    <option value="2">Texas</option>
+                    <option value="3">Florida</option>
                 </select>
+
             </div>
             <div class="col-3">
                 <label>Postal code</label><br>
-                <input type="text" name="" id="">
+                <input type="text" class="form-control">
             </div>
-            <div class="col-6">
-                We accept:<br>
+            <div class="col-6 mt-5 mb-3">
+
+                <label>We accept:</label><br>
+
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary"><i class="fa-brands fa-cc-mastercard"></i></button>
                     <button type="button" class="btn btn-secondary"><i class="fa-brands fa-cc-visa"></i></button>
@@ -71,15 +77,15 @@
                     <button type="button" class="btn btn-secondary"><i class="fa-brands fa-cc-paypal"></i></button>
                 </div>
             </div>
-            <div class="col-6">
-                <label>Message</label><br>
-                <div class=""form-floating">
-                <label for="floatingTextarea"></label>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <p>Add any notes here</p>
+            <div class=" d-block col-6">
+                <br><label>Message</label><br>
+                <div class="" form-floating">
+                    <label for="floatingTextarea"></label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <p>Add any notes here</p>
+                </div>
             </div>
-            </div>
-            <div class="col-12 btn-light">
+            <div class="col-12 mb-3 bg-light">
                 <div class="d-grid d-md-flex justify-content-md-end">
                     <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
                     <button class="btn btn-primary" type="button">Send</button>
