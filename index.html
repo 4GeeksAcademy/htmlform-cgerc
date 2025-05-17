@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d113bc53a8.js" crossorigin="anonymous"></script>
     <title>Formulario HTML5</title>
+    <style>
+        .container {
+            border: 1px solid black
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <form class="row border border-danger">
+    <div class="container d-flex justify-content-center">
+        <form class="row g-3">
             <div class="col-12 bg-light">
                 <h1>Payment for example</h1>
             </div>
@@ -68,10 +73,14 @@
             </div>
             <div class="col-6">
                 <label>Message</label><br>
-                <textarea name="" id=""></textarea>
+                <div class=""form-floating">
+                <label for="floatingTextarea"></label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <p>Add any notes here</p>
+            </div>
             </div>
             <div class="col-12 btn-light">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <div class="d-grid d-md-flex justify-content-md-end">
                     <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
                     <button class="btn btn-primary" type="button">Send</button>
                 </div>
